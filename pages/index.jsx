@@ -6,6 +6,7 @@ import Typed from "typed.js";
 
 import LinkedinIcon from "@/components/icons/Linkedin";
 import GithubIcon from "@/components/icons/Github";
+import ArrowLeft from "@/components/icons/ArrowLeft";
 
 export default function Home() {
   const el = useRef(null);
@@ -88,9 +89,9 @@ export default function Home() {
                     <span>// Portfolio.js </span>
                   </div>
                   <p>
-                    <span className="text-gray-500">//</span>{" "}
+                    <span className="text-gray-500 me-2">//</span>
                     <span className="text-purple-300 text-wrap">Todo:</span>
-                    <span className=" text-wrap">
+                    <span className="text-wrap">
                       You can drag these balloons, you will really like them
                       🎈🎈
                     </span>
@@ -104,14 +105,16 @@ export default function Home() {
                     />
 
                     <div className="text-sm text-wrap leading-8 m-0">
-                      <p>
-                        <span className="text-pink-300 "> {">"} </span> const
-                        <span className="font-bold text-pink-300">
-                          {" "}
+                      <p className=" ">
+                        <span className="text-pink-300 me-2">{">"}</span>
+                        const
+                        <span className="font-bold text-pink-300 mx-2">
                           skills
-                        </span>{" "}
-                        = ["Reactjs", "Nextjs", "Typescript", "React-Redux",
-                        "Redux-Toolkit", "Git/Github", "Nodejs"];
+                        </span>
+                        = [&quot;Reactjs&quot;, &quot;Nextjs&quot;,
+                        &quot;Typescript&quot;, &quot;React-Redux&quot;,
+                        &quot;Redux-Toolkit&quot;, &quot;Git/Github&quot;,
+                        &quot;Nodejs&quot;];
                       </p>
                     </div>
                   </div>
