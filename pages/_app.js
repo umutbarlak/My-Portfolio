@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
       <NextNProgress color={fuchsia[500]} height={4} />
       <Component {...pageProps} />
     </ThemeProvider>

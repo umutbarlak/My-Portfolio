@@ -1,26 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
-import Typical from "react-typical";
+import Typed from "typed.js";
 
 import LinkedinIcon from "@/components/icons/Linkedin";
 import GithubIcon from "@/components/icons/Github";
-import ArrowLeft from "@/components/icons/ArrowLeft";
 
 export default function Home() {
-  const TypingAnimation = React.memo(
-    () => {
-      return (
-        <Typical
-          loop={10}
-          wrapper="p"
-          steps={["React Developer", 5000, "Frontend Developer", 5000]}
-        />
-      );
-    },
-    (props, prevProps) => true
-  );
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["React Developer", "Frontend Developer"],
+      typeSpeed: 70,
+      backSpeed: 30,
+      loop: true,
+      backDelay: 1500,
+      showCursor: false,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <Layout title={"Portfolio"} description={"My Portfolio"}>
       <motion.img
@@ -50,8 +54,8 @@ export default function Home() {
             <h1 className=" mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
               Ümüt Barlak
             </h1>
-            <div className=" mt-5 text-2xl font-normal md:text-3xl md:mt-3  tracking-normal -webkit-bg-clip-text bg-clip-text  text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-              <TypingAnimation />
+            <div className=" mt-5 text-2xl font-normal md:text-3xl md:mt-3  tracking-normal -webkit-bg-clip-text bg-clip-text  text-transparent bg-gradient-to-r from-pink-500 to-violet-500 h-[32px] md:h-[36px]">
+              <div ref={el} />
             </div>
 
             <div className=" flex items-center mt-5 space-x-6 md:mt-4">
