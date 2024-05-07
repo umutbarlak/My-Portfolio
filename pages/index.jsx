@@ -91,7 +91,7 @@ export default function Home() {
                   <p>
                     <span className="text-gray-500 me-2">//</span>
                     <span className="text-purple-300 text-wrap">Todo:</span>
-                    <span className="text-wrap">
+                    <span className="text-wrap ms-2">
                       You can drag these balloons, you will really like them
                       🎈🎈
                     </span>
