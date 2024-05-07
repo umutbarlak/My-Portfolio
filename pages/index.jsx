@@ -92,15 +92,15 @@ export default function Home() {
                     </span>
                   </p>
 
-                  <div className="flex items-center space-x-4">
+                  <div className="flex justify-center items-center gap-4">
                     <img
                       src="/me/me.jpeg"
                       alt="Me"
-                      className="w-10 h-10 rounded-full"
+                      className="w-16 h-16  rounded-full object-cover me-2 hidden sm:block"
                     />
 
-                    <div className="">
-                      <p className="text-sm text-wrap leading-8">
+                    <div className="text-sm text-wrap leading-8 m-0">
+                      <p>
                         <span className="text-pink-300 "> {">"} </span> const
                         <span className="font-bold text-pink-300">
                           {" "}
