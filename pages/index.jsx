@@ -13,7 +13,7 @@ export default function Home() {
     () => {
       return (
         <Typical
-          loop={5}
+          loop={10}
           wrapper="p"
           steps={["React Developer", 5000, "Frontend Developer", 5000]}
         />

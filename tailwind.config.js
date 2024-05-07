@@ -30,36 +30,7 @@ module.exports = {
       },
     },
   },
-  // typography: (theme) => ({
-  //   DEFAULT: {
-  //     css: {
-  //       color: "#e86ed0",
-  //       a: {
-  //         color: "#e86ed0",
-  //         "&:hover": {
-  //           color: "#edb5f5",
-  //         },
-  //       },
-  //     },
-  //   },
-  //   dark: {
-  //     css: {
-  //       color: theme("colors.gray.100"),
 
-  //       a: {
-  //         color: theme("colors.purple.400"),
-  //         "&:hover": {
-  //           color: theme("colors.purple.300"),
-  //         },
-  //       },
-  //     },
-  //   },
-  // }),
-
-  variants: {
-    // extend: {
-    //   typography: ["dark"],
-    // },
-  },
+  variants: {},
   plugins: [require("@tailwindcss/typography")],
 };
